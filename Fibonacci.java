@@ -1,3 +1,7 @@
+/*
+Program will calculate maximum Fibonacci number that is still lower than entered integer.
+*/
+
 import java.util.*; //import library for Scanner
 
 public class Fibonacci{
