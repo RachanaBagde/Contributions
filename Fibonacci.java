@@ -13,9 +13,7 @@ public class Fibonacci{
 		int a=0;
 		int b=1;
 		int c=0;
-		
-		while (a+c<=n){
-			
+		while (a+c<=n){	
 			a+=c;
 			c=b;
 			b=a;

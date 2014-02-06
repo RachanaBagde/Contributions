@@ -23,9 +23,7 @@ public class NextPrime{
 					boolean p2 = true;
 					p++;
 					for (int i=2; i<=p/2;i++){ //loop for checking if a number is prime
-						if (p%i==0){
-							p2= false;
-						}
+						if (p%i==0) p2= false;
 					}
 					if (p2==true) {
 						prime =true;
