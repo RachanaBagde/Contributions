@@ -48,7 +48,7 @@ public class Cipher{
 		return o;
 	}
 	public static void decodeText(char[] e,char[] A){
-		for (int i=1;i<25;i++){
+		for (int i=1;i<=25;i++){
 			char[] decode = encodeText(e,i,A);
 			printCode(decode);
 			System.out.print(" - Shifted by "+i+" letters.");
