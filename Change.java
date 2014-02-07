@@ -17,7 +17,7 @@ public class Change{
 		double price = sc.nextDouble()*100; //price in pennies
 		System.out.print("Enter the paid amount: ");
 		double paid = sc.nextDouble()*100; //paid in pennies
-		
+		//exits with appropriate warning if not enough money on nothing to return
 		if (price > paid){
 			System.out.println("Not enough money.");
 			System.exit(0);
@@ -26,7 +26,9 @@ public class Change{
 			System.exit(0);
 		
 		}
+		
 		int change = (int)paid-(int)price;
+		//calculate the amount of coin to return
 		for (int i=0;i<value.length; i++){
 			give[i]= (int)change/value[i];
 			change=change%value[i];

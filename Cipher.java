@@ -24,7 +24,7 @@ public class Cipher{
 		System.out.println();
 		System.out.println();
 		
-		String ignore = sc.nextLine();
+		String ignore = sc.nextLine(); //ignores the rest of the line
 		System.out.print("Enter text to be decoded: ");
 		String textD = sc.nextLine();	
 		char[] dec = textD.toCharArray();
