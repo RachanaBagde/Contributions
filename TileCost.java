@@ -21,10 +21,10 @@ public class TileCost{
 		//sc.useLocale(Locale.US);
 		
 		System.out.print("Enter cost of tiles per square meter: ");
-		double c = sc.nextDouble();
+		double cost = sc.nextDouble();
+		System.out.println();
 		
-		System.out.println();
-		System.out.printf("Total cost of tile for %d square meters if %.2f EUR", h*w,h*w*c);
-		System.out.println();
+		System.out.printf("Total cost of tile for %d square meters if %.2f EUR\n", h*w,h*w*cost);
+		
 	}
 }

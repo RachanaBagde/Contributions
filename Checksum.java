@@ -14,13 +14,13 @@ public class Checksum{
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Enter credit card number without spaces: ");
-		String code = sc.nextLine();
+		String codeString = sc.nextLine();
 		System.out.println();
 		
-		char[] c = code.toCharArray();
-		int[] number = new int[c.length];
-		for (int i=0; i<c.length;i++){
-			number[i]=Character.digit(c[i],10);
+		char[] codeChar = codeString.toCharArray();
+		int[] number = new int[codeChar.length];
+		for (int i=0; i<codeChar.length;i++){
+			number[i]=Character.digit(codeChar[i],10);
 		}
 		int sum=0;
 		

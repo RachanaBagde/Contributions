@@ -21,10 +21,10 @@ public class Factors{
 	//reusable method for checking if parameter numbe is prime
 	public static boolean isPrime(int p){
 		boolean prime = true;
-		isPrime: for (int i=2; i<=p/2;i++){
+		Prime: for (int i=2; i<=p/2;i++){
 			if (p%i==0) {
 				prime=false;
-				break isPrime;
+				break Prime;
 			}
 		}
 		return prime;

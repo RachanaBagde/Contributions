@@ -9,28 +9,28 @@ import java.util.*; //import library for scanner
 public class NextPrime{
 	public static void main(String[] args){
 		Scanner sc= new Scanner(System.in); 
-		int p=2; //first prime
+		int nextPrime=2; //first prime
 		int n=1; //sequential number of a prime number
-		System.out.printf("%d. prime number is %d\n\n",n,p);
+		System.out.printf("%d. prime number is %d\n\n",n,nextPrime);
 		while (true){
 			
 			System.out.print("Do you want to continue(y/n)? "); //user input
 			String check = sc.nextLine();
 			if (check.equals("y")){ 
 				
-				boolean prime = false;
-				while (prime != true){
-					boolean p2 = true;
-					p++;
-					for (int i=2; i<=p/2;i++){ //loop for checking if a number is prime
-						if (p%i==0) p2= false;
+				boolean isPrime = false;
+				while (isPrime != true){
+					boolean primeCheck = true;
+					nextPrime++;
+					for (int i=2; i<=nextPrime/2;i++){ //loop for checking if a number is prime
+						if (nextPrime%i==0) primeCheck= false;
 					}
-					if (p2==true) {
-						prime =true;
+					if (primeCheck==true) {
+						isPrime =true;
 						n++;
 					}
 				}
-				System.out.printf("%d. prime number is %d\n\n",n,p);
+				System.out.printf("%d. prime number is %d\n\n",n,nextPrime);
 			} else {
 				System.exit(0);
 			}
