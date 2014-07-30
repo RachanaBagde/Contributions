@@ -20,7 +20,7 @@ public class Checksum{
 		char[] codeChar = codeString.toCharArray();
 		int[] number = new int[codeChar.length];
 		for (int i=0; i<codeChar.length;i++){
-			number[i]=Character.digit(codeChar[i],10);
+			number[i]=Character.getNumericValue(codeChar[i]);
 		}
 		int sum=0;
 		
